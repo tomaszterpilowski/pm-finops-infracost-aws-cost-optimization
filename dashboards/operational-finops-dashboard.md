@@ -1,16 +1,38 @@
-# Operational FinOps Dashboard
+# AWS FinOps Implementation
 
-## Purpose
+## Executive Operations Dashboard
 
-Operational dashboard used during monthly FinOps reviews with Cloud Engineering, DevOps, Platform Engineering and Finance stakeholders.
+AWS FinOps implementation focused on introducing cost visibility into the Terraform delivery process, improving financial governance, increasing commitment coverage and establishing recurring operational reviews across engineering teams.
 
-The dashboard tracks AWS cost governance, Terraform cost visibility adoption, commitment coverage and optimization execution.
+The initiative integrated cost management directly into infrastructure delivery workflows using Terraform, Atlantis and Infracost, providing engineering teams with real-time AWS cost impact visibility before deployment decisions were made.
 
 ---
 
 # Executive Dashboard
 
-../images/aws-finops-executive-dashboard.png
+<img width="1536" height="1024" alt="Projekt bez nazwy (1)" src="https://github.com/user-attachments/assets/9540c988-8ef1-4817-b447-801c8366cc26" />
+
+---
+
+# Project Overview
+
+| Area | Value |
+|--------|--------:|
+| Project Duration | 9 Months |
+| Core Team Size | 9 People |
+| Extended Stakeholders | ~24 |
+| AWS Accounts | 8 |
+| Engineering Teams | 6 |
+| Key Terraform Repositories | 14 |
+
+### Objectives
+
+- Establish FinOps governance model across AWS environments
+- Introduce infrastructure cost visibility into Pull Request workflows
+- Improve Savings Plans and Reserved Instance coverage
+- Enable engineering ownership of cloud spend
+- Deliver measurable cost optimization outcomes
+- Create operational reporting and executive governance processes
 
 ---
 
@@ -23,41 +45,15 @@ The dashboard tracks AWS cost governance, Terraform cost visibility adoption, co
 | AWS Accounts Covered | 8 | Complete |
 | PR Cost Visibility | 95% | Operational |
 | Savings Plans + RI Coverage | 82% | Optimized |
-| Monthly Savings Run-Rate | $38K | Achieved |
-| AWS Monthly Spend (Current) | $135K | Stable |
-| AWS Monthly Spend (Baseline) | $173K | Historical |
+| Monthly Savings Run-Rate | $38K |
+| AWS Monthly Spend (Current) | $135K |
+| AWS Monthly Spend (Baseline) | $173K |
 
 ---
 
-# Program Scope
+# Terraform Cost Visibility Implementation
 
-## Delivery Overview
-
-| Area | Value |
-|------|------:|
-| Project Duration | 9 Months |
-| Core Team Size | 9 People |
-| Extended Stakeholders | ~24 |
-| AWS Accounts | 8 |
-| Engineering Teams | 6 |
-| Key Terraform Repositories | 14 |
-
----
-
-# PR Cost Visibility
-
-## Adoption Metrics
-
-| Metric | Value |
-|------|------:|
-| Key Terraform Repositories | 14 |
-| Engineering Teams | 6 |
-| AWS Accounts | 8 |
-| Cost Visibility Coverage | 95% |
-| Repositories Fully Onboarded | 14 |
-| Remaining Exceptions | 5% |
-
-## Cost Review Workflow
+## Delivery Workflow
 
 ```text
 Developer
@@ -68,7 +64,7 @@ Pull Request
     ↓
 Atlantis Plan
     ↓
-Infracost Estimate
+Infracost Cost Estimate
     ↓
 Engineering Review
     ↓
@@ -77,21 +73,29 @@ Approve / Rework
 Deployment
 ```
 
+### Adoption Metrics
+
+| Metric | Value |
+|------|------:|
+| Key Terraform Repositories | 14 |
+| Engineering Teams | 6 |
+| AWS Accounts | 8 |
+| Cost Visibility Coverage | 95% |
+| Repositories Fully Onboarded | 14 |
+| Remaining Exceptions | 5% |
+
+### Delivered Capabilities
+
+- Infracost integrated into Terraform Pull Requests
+- Cost estimation visible before deployment approval
+- Standardized engineering review process
+- Cost impact included within change management workflow
+- Governance dashboards for operational reviews
+- Cost accountability shifted closer to engineering teams
+
 ---
 
-# Optimization Backlog
-
-| Category | Example Work Items | Priority |
-|---|---|---|
-| EKS Optimization | Node mix, workload efficiency, namespace visibility | High |
-| Commitment Optimization | Savings Plans, RI coverage, expiry review | High |
-| Rightsizing | RDS sizing, EC2 sizing, storage optimization | Medium |
-| Waste Reduction | Idle resources, non-production schedules | Medium |
-| Governance | Tagging standards, ownership mapping, dashboards | Medium |
-
----
-
-# Commitment Coverage
+# Commitment Coverage Management
 
 ## Current Coverage
 
@@ -102,31 +106,32 @@ Deployment
 | Coverage Status | Healthy |
 | Review Frequency | Monthly |
 
-### Coverage Summary
+### Coverage Strategy
 
-82% commitment coverage provides a balance between:
+The program maintains approximately 82% commitment coverage to balance:
 
-- Cost Optimization
-- Operational Flexibility
-- Growth Readiness
-- Commitment Risk Management
+- Cost optimization
+- Operational flexibility
+- Growth readiness
+- Risk management
 
-Maintaining 100% commitment coverage is generally not recommended because development, burst and temporary workloads typically require a percentage of on-demand capacity.
+Maintaining 100% commitment coverage was intentionally avoided to preserve flexibility for development, temporary and burst workloads.
 
 ---
 
-# Monthly Savings Drivers
+# Financial Results
+
+## Monthly Savings Breakdown
 
 | Optimization Area | Monthly Impact |
 |---|---:|
-| Savings Plans + RI Optimization | $24K |
-| Rightsizing & Resource Cleanup | $9K |
-| Governance & Cost Visibility | $5K |
+| Savings Plans & RI Optimization | $18K |
+| Cost Visibility Adoption | $10K |
+| Terraform Governance | $7K |
+| Infracost in Pull Requests | $3K |
 | **Total Savings** | **$38K** |
 
----
-
-# Cost Reduction Results
+## Cost Reduction Results
 
 | Metric | Before | After |
 |---|---:|---:|
@@ -139,27 +144,59 @@ Maintaining 100% commitment coverage is generally not recommended because develo
 
 ---
 
-# Action Tracking
+# Operational Governance
+
+## Optimization Backlog
+
+| Category | Example Work Items | Priority |
+|---|---|---|
+| PR Cost Visibility | Infracost rollout, estimation reviews, workflow adoption | High |
+| Repository Onboarding | Terraform repository onboarding and enablement | High |
+| Review Standards | Cost impact review standards and approvals | High |
+| FinOps Governance | Monthly reviews, KPI ownership and governance | Medium |
+| Executive Reporting | Dashboards, metrics and stakeholder communication | Medium |
+
+## Action Tracking
 
 | Action | Owner | Status | Notes |
 |---|---|---|---|
-| Review Upcoming Commitment Expiry | FinOps + Cloud | Open | Monthly Governance Activity |
-| Validate High-Cost Terraform PRs | Cloud + Reviewers | Active | Cost Review Workflow |
-| Improve Tagging Coverage | DevOps + Application Owners | In Progress | Governance Backlog |
-| Review EKS Cost Allocation | Cloud Engineering | Active | Kubecost Review |
-| Monthly Savings Validation | Finance + FinOps | Active | Executive Reporting |
+| Review Upcoming Commitment Expiry | FinOps + Cloud | Open | Monthly governance activity |
+| Validate High-Cost Terraform PRs | Cloud + Reviewers | Active | Cost review workflow |
+| Improve Tagging Coverage | DevOps + Application Owners | In Progress | Governance backlog |
+| Review High-Impact Cost Deltas | Platform Engineering | Active | Infracost review |
+| Monthly Savings Validation | Finance + FinOps | Active | Executive reporting |
+
+## Governance Model
+
+| Area | Value |
+|---|---|
+| Delivery Framework | Agile |
+| Service Management | ITIL 4 |
+| Financial Governance | FinOps |
+| Review Frequency | Monthly |
 
 ---
 
-# Business Outcomes
+# Program Outcomes
+
+## Adoption & Operational Results
+
+| Metric | Value |
+|---|---|
+| Initial Savings Observed | After 3 Months |
+| Full Savings Run-Rate Achieved | By Month 6 |
+| Adoption Coverage | 95% |
+| Current Program Status | Operational |
+
+### Business Outcomes
 
 ✅ AWS Cost Governance Operational
 
 ✅ 14 Key Terraform Repositories Onboarded
 
-✅ 95% PR Cost Visibility
+✅ 95% Pull Request Cost Visibility
 
-✅ 82% Savings Plans + RI Coverage
+✅ 82% Savings Plans & Reserved Instance Coverage
 
 ✅ 6 Engineering Teams Enabled
 
@@ -169,16 +206,28 @@ Maintaining 100% commitment coverage is generally not recommended because develo
 
 ✅ $456K Annualized Savings
 
-✅ Monthly FinOps Review Process Established
+✅ Executive FinOps Reporting Established
+
+✅ Monthly Governance Reviews Embedded Into Operations
 
 ---
 
 # Operational Status
 
-**Status:** Green
+## Status: Green
 
-The FinOps program is fully operational and integrated into the AWS infrastructure delivery process.
+The FinOps operating model is fully integrated into the Terraform infrastructure delivery lifecycle.
 
-Key infrastructure changes are reviewed for cost impact before deployment, commitment coverage is actively managed, and optimization activities are tracked through recurring monthly governance reviews.
+Engineering teams receive AWS cost visibility directly within Pull Requests through Atlantis and Infracost workflows. Cost impact reviews occur before infrastructure changes are approved, enabling proactive financial governance and engineering ownership.
 
-The program currently delivers approximately **$38K monthly savings**, maintains **82% Savings Plans + Reserved Instance coverage**, and provides **95% Terraform Pull Request cost visibility** across **14 key Terraform repositories**.
+The program currently delivers:
+
+- 95% Terraform Pull Request cost visibility
+- 14 onboarded Terraform repositories
+- 6 participating engineering teams
+- 8 AWS accounts under governance
+- 82% Savings Plans and Reserved Instance coverage
+- $38K monthly savings run-rate
+- $456K annualized savings
+
+Recurring monthly governance reviews track adoption, financial performance, commitment coverage and future optimization opportunities across AWS environments.
