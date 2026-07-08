@@ -26,10 +26,8 @@ This dashboard is for the operational FinOps review with Cloud Engineering, DevO
 
 ### Commitment Coverage
 
-```text
-Covered       | ################################# | 82%
-Uncovered     | #######                           | 18%
-```
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c42e9ca4-8067-4f4a-861c-d64687e0991e" />
+
 
 ### Action Tracking
 
