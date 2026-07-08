@@ -45,9 +45,9 @@ The initiative integrated cost management directly into infrastructure delivery 
 | AWS Accounts Covered | 8 | Complete |
 | PR Cost Visibility | 95% | Operational |
 | Savings Plans + RI Coverage | 82% | Optimized |
-| Monthly Savings Run-Rate | $38K |
-| AWS Monthly Spend (Current) | $135K |
-| AWS Monthly Spend (Baseline) | $173K |
+| Monthly Savings Run-Rate | $38K | Achieved |
+| AWS Monthly Spend (Current) | $135K | Controlled |
+| AWS Monthly Spend (Baseline) | $173K | Historical |
 
 ---
 
