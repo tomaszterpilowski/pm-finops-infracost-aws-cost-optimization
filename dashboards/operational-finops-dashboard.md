@@ -2,38 +2,53 @@
 
 ## Purpose
 
-This dashboard is for the operational FinOps review with Cloud Engineering, DevOps and Finance stakeholders.
+Operational dashboard used during monthly FinOps reviews with Cloud Engineering, DevOps, Platform and Finance stakeholders.
 
-## Dashboard Sections
+The dashboard tracks AWS spend governance, Terraform cost visibility adoption, commitment coverage and optimization execution.
 
-### PR Cost Visibility
+---
 
-| Metric | Target | Status |
-|---|---:|---|
-| relevant Terraform PRs with cost estimate | 100% | implemented |
-| repositories onboarded | 14 | complete |
-| engineering teams onboarded | 6 | complete |
+## Key Operational KPIs
 
-### Optimization Backlog
+| KPI | Current Value | Status |
+|------|------:|------|
+| Key Terraform Repositories | 14 | Active |
+| Engineering Teams Onboarded | 6 | Complete |
+| AWS Accounts Covered | 8 | Complete |
+| PR Cost Visibility | 95% | Operational |
+| Savings Plans + RI Coverage | 82% | Optimized |
+| Monthly Savings Run-Rate | $38K | Achieved |
 
-| Category | Example work items |
-|---|---|
-| EKS optimization | node mix, workload efficiency, namespace cost visibility |
-| Commitment optimization | SP / RI coverage, expiry review, forecast alignment |
-| Rightsizing | RDS classes, compute sizing, storage review |
-| Waste reduction | idle resources, non-production schedules |
-| Governance | tagging, owners, dashboard mapping |
+---
 
-### Commitment Coverage
+## PR Cost Visibility
 
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/c42e9ca4-8067-4f4a-861c-d64687e0991e" />
+### Adoption Metrics
 
+| Metric | Value |
+|---|---:|
+| Key Terraform Repositories | 14 |
+| Engineering Teams | 6 |
+| AWS Accounts | 8 |
+| PR Cost Visibility | 95% |
+| Repositories Fully Onboarded | 14 |
+| Remaining Manual Exceptions | 5% |
 
-### Action Tracking
+### Process Flow
 
-| Action | Owner | Status | Notes |
-|---|---|---|---|
-| Review upcoming commitment expiry | FinOps + Cloud | Open | monthly action |
-| Validate large PR deltas | Cloud + Reviewers | Active | handled in PR workflow |
-| Improve missing tags | DevOps + App Owners | In progress | backlog-driven |
-| Review EKS cost allocation | Cloud | Active | Kubecost input |
+```text
+Developer
+   ↓
+Terraform Change
+   ↓
+Pull Request
+   ↓
+Atlantis Plan
+   ↓
+Infracost Estimate
+   ↓
+Engineering Review
+   ↓
+Approval / Rework
+   ↓
+Deployment
